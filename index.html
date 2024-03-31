@@ -537,6 +537,7 @@
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script>
        const form = document.querySelector('.contact_form');
+       const footerform = document.querySelector('.contact_footer_form');
         function sendMessage(e){
             e.preventDefault();
             const params = {
@@ -556,7 +557,7 @@
             document.getElementById('message').value  = '';
         }
         form.addEventListener('submit',sendMessage);
-        
+        footerform.addEventListener('submit',sendMessage);
     </script>
 </body>
 
