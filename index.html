@@ -550,8 +550,13 @@
             emailjs.send(serviceID,templateID,params).then(
                 message => $("#exampleModal").modal("hide")
                 );
+            document.getElementById('first_name').value = '';
+            document.getElementById('last_name').value  = '';
+            document.getElementById('email').value  = '';
+            document.getElementById('message').value  = '';
         }
         form.addEventListener('submit',sendMessage);
+        
     </script>
 </body>
 
